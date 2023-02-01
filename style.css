@@ -1,0 +1,151 @@
+html { 
+    background: url(İmage/useful-forest.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+ @media(max-width:920px){
+    html{
+        font-size: 75%;
+    }
+ } 
+
+ @media(max-width:720px){
+    .filters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .clearBtn{
+        margin-top: 12px;
+    }
+ }
+
+/* basic-container */
+.container-general{
+    width: 45vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(5px);
+}
+
+
+
+#under-head{
+    border: 1px solid rgb(126, 124, 124);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Header input */
+#txtTaskName{
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    height: 7vh;
+    border: none;
+    padding: 10px;
+}
+
+#txtTaskName:focus{
+    outline: none;
+}
+
+/* Buttons */
+.addBtn{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    height: 7vh;
+    border: none;
+    background-color: #5B8FB9;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.clearBtn{
+    width: 25%;
+    height: 6vh;
+    border: none;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+/* middle section */
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-span{
+    font-size: 1.2rem;
+    margin-left: .4rem;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+
+.filter-span.active{
+    color: #b00ed4;
+}
+
+/* middle section finish */
+
+/* List section */
+.list-item{
+    margin-top: 25px;
+    width: 90%;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.list-item::-webkit-scrollbar{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* List section finish */
+
+/* List item */
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    height: 10vh;
+    border-bottom: 3px solid rgb(153, 152, 152);
+    font-size: 1rem;
+}
+/* List item finish */
+
+/* adding from script.js */
+.form-check{
+    margin-left: 10px;
+}
+
+.form-check-label.checked{
+    text-decoration: line-through;
+}
+#dropdown-button::after{
+    display: none;
+}
+
+#dropdown-button{
+    margin-right: 10px;
+}
+
+.free-task{
+    color: rgb(239, 238, 243);
+    font-size:1.3rem;
+    text-align: center;
+}
